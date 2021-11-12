@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c243338d-735f-427b-aaca-4fdee61f3ff0}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>robots</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/engine/src/tools</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/engine/src/tools</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <MultiProcNumber>4</MultiProcNumber>
+    <RemoteOutRelDir>../../bin</RemoteOutRelDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <EnableASAN>true</EnableASAN>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <MultiProcNumber>4</MultiProcNumber>
+    <RemoteOutRelDir>../../bin</RemoteOutRelDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="global_robots.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="robot.cpp" />
+    <ClCompile Include="robot_collection.cpp" />
+    <ClCompile Include="robot_component_gametoken.cpp" />
+    <ClCompile Include="robot_component_login.cpp" />
+    <ClCompile Include="robot_console_http.cpp" />
+    <ClCompile Include="robot_console_login.cpp" />
+    <ClCompile Include="robot_console_world.cpp" />
+    <ClCompile Include="robot_locator.cpp" />
+    <ClCompile Include="robot_mgr.cpp" />
+    <ClCompile Include="robot_state.cpp" />
+    <ClCompile Include="robot_state_game.cpp" />
+    <ClCompile Include="robot_state_http.cpp" />
+    <ClCompile Include="robot_state_login.cpp" />
+    <ClCompile Include="test_http_login.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global_robots.h" />
+    <ClInclude Include="robot.h" />
+    <ClInclude Include="robot_collection.h" />
+    <ClInclude Include="robot_component_gametoken.h" />
+    <ClInclude Include="robot_component_login.h" />
+    <ClInclude Include="robot_console_http.h" />
+    <ClInclude Include="robot_console_login.h" />
+    <ClInclude Include="robot_console_world.h" />
+    <ClInclude Include="robot_locator.h" />
+    <ClInclude Include="robot_mgr.h" />
+    <ClInclude Include="robot_state.h" />
+    <ClInclude Include="robot_state_game.h" />
+    <ClInclude Include="robot_state_http.h" />
+    <ClInclude Include="robot_state_login.h" />
+    <ClInclude Include="test_http_login.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\player\player.vcxproj">
+      <Project>{d28ed1c3-ac2b-4f0d-a5b8-b5a1bd5f8c33}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\resource\resource.vcxproj">
+      <Project>{165f39ed-feb2-48b4-a48a-0bcd96bacc7e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\server\server.vcxproj">
+      <Project>{835a2c09-d34b-43b9-8895-2ddcab5f59b3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/local/lib</AdditionalLibraryDirectories>
+      <LibraryDependencies>protobuf;log4cplus;jsoncpp</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>/usr/local/lib</AdditionalLibraryDirectories>
+      <LibraryDependencies>protobuf;log4cplus;jsoncpp</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
