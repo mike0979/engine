@@ -312,6 +312,9 @@
     <ClInclude Include="console_cmd_efficiency.h">
       <Filter>entity\console\efficiency</Filter>
     </ClInclude>
+    <ClInclude Include="mongoose\mongoose.h">
+      <Filter>entity\network\mongoose</Filter>
+    </ClInclude>
     <ClInclude Include="protobuf\db.pb.h">
       <Filter>ecs\system\message\protobuf</Filter>
     </ClInclude>
@@ -320,9 +323,6 @@
     </ClInclude>
     <ClInclude Include="protobuf\proto_id.pb.h">
       <Filter>ecs\system\message\protobuf</Filter>
-    </ClInclude>
-    <ClInclude Include="mongoose\mongoose.h">
-      <Filter>entity\network\mongoose</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -476,6 +476,9 @@
     <ClCompile Include="console_cmd_efficiency.cpp">
       <Filter>entity\console\efficiency</Filter>
     </ClCompile>
+    <ClCompile Include="mongoose\mongoose.c">
+      <Filter>entity\network\mongoose</Filter>
+    </ClCompile>
     <ClCompile Include="protobuf\db.pb.cc">
       <Filter>ecs\system\message\protobuf</Filter>
     </ClCompile>
@@ -484,9 +487,6 @@
     </ClCompile>
     <ClCompile Include="protobuf\proto_id.pb.cc">
       <Filter>ecs\system\message\protobuf</Filter>
-    </ClCompile>
-    <ClCompile Include="mongoose\mongoose.c">
-      <Filter>entity\network\mongoose</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
