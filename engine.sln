@@ -13,30 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "robots", "src\tools\robots\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "login", "src\apps\login\login.vcxproj", "{20781841-DD8D-42F8-814D-DED93E4D5952}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "res", "res", "{C7F03C4B-0F58-4320-B046-2B72FA488FCF}"
-	ProjectSection(SolutionItems) = preProject
-		res\engine.yaml = res\engine.yaml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proto", "proto", "{1E4A251D-39F8-49A0-95CA-F1B6AF27DB39}"
-	ProjectSection(SolutionItems) = preProject
-		res\proto\db.proto = res\proto\db.proto
-		res\proto\msg.proto = res\proto\msg.proto
-		res\proto\proto_id.proto = res\proto\proto_id.proto
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dbmgr", "src\apps\dbmgr\dbmgr.vcxproj", "{2AFBCBAF-BEA1-46AE-ACD0-21AE641B217D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4", "log4", "{CBD34EFC-C5FE-492D-85B9-328C5D0275DF}"
-	ProjectSection(SolutionItems) = preProject
-		res\log4\log4_allinone.properties = res\log4\log4_allinone.properties
-		res\log4\log4_appmgr.properties = res\log4\log4_appmgr.properties
-		res\log4\log4_dbmgr.properties = res\log4\log4_dbmgr.properties
-		res\log4\log4_game.properties = res\log4\log4_game.properties
-		res\log4\log4_login.properties = res\log4\log4_login.properties
-		res\log4\log4_robot.properties = res\log4\log4_robot.properties
-		res\log4\log4_space.properties = res\log4\log4_space.properties
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "appmgr", "src\apps\appmgr\appmgr.vcxproj", "{DA766644-4BE1-4395-9A1B-3787EC8EB3E6}"
 EndProject
@@ -285,9 +262,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C243338D-735F-427B-AACA-4FDEE61F3FF0} = {CC789673-8B59-4389-B418-B3280EE932CA}
 		{20781841-DD8D-42F8-814D-DED93E4D5952} = {C584744D-DCFA-4526-AA72-A092BD40AE55}
-		{1E4A251D-39F8-49A0-95CA-F1B6AF27DB39} = {C7F03C4B-0F58-4320-B046-2B72FA488FCF}
 		{2AFBCBAF-BEA1-46AE-ACD0-21AE641B217D} = {C584744D-DCFA-4526-AA72-A092BD40AE55}
-		{CBD34EFC-C5FE-492D-85B9-328C5D0275DF} = {C7F03C4B-0F58-4320-B046-2B72FA488FCF}
 		{DA766644-4BE1-4395-9A1B-3787EC8EB3E6} = {C584744D-DCFA-4526-AA72-A092BD40AE55}
 		{835A2C09-D34B-43B9-8895-2DDCAB5F59B3} = {04E81928-D921-47A9-8EA5-8A2A4101E4AB}
 		{17F1126D-552E-4CE9-8CF3-FE13DC763BA0} = {C584744D-DCFA-4526-AA72-A092BD40AE55}

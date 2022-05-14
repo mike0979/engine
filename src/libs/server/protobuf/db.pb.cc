@@ -14,81 +14,106 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
+extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LastWorld_db_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerBase_db_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PlayerMisc_db_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_db_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector3_db_2eproto;
 namespace Proto {
-constexpr Vector3::Vector3(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0)
-  , z_(0){}
-struct Vector3DefaultTypeInternal {
-  constexpr Vector3DefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Vector3DefaultTypeInternal() {}
-  union {
-    Vector3 _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Vector3DefaultTypeInternal _Vector3_default_instance_;
-constexpr PlayerBase::PlayerBase(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : gender_(0)
-
-  , level_(0){}
-struct PlayerBaseDefaultTypeInternal {
-  constexpr PlayerBaseDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~PlayerBaseDefaultTypeInternal() {}
-  union {
-    PlayerBase _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PlayerBaseDefaultTypeInternal _PlayerBase_default_instance_;
-constexpr LastWorld::LastWorld(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : position_(nullptr)
-  , world_sn_(int64_t{0})
-  , world_id_(0){}
-struct LastWorldDefaultTypeInternal {
-  constexpr LastWorldDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LastWorldDefaultTypeInternal() {}
-  union {
-    LastWorld _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LastWorldDefaultTypeInternal _LastWorld_default_instance_;
-constexpr PlayerMisc::PlayerMisc(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : last_world_(nullptr)
-  , last_dungeon_(nullptr)
-  , online_version_(0){}
-struct PlayerMiscDefaultTypeInternal {
-  constexpr PlayerMiscDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~PlayerMiscDefaultTypeInternal() {}
-  union {
-    PlayerMisc _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PlayerMiscDefaultTypeInternal _PlayerMisc_default_instance_;
-constexpr Player::Player(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , base_(nullptr)
-  , misc_(nullptr)
-  , sn_(uint64_t{0u}){}
-struct PlayerDefaultTypeInternal {
-  constexpr PlayerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~PlayerDefaultTypeInternal() {}
-  union {
-    Player _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PlayerDefaultTypeInternal _Player_default_instance_;
+class Vector3DefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Vector3> _instance;
+} _Vector3_default_instance_;
+class PlayerBaseDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PlayerBase> _instance;
+} _PlayerBase_default_instance_;
+class LastWorldDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LastWorld> _instance;
+} _LastWorld_default_instance_;
+class PlayerMiscDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PlayerMisc> _instance;
+} _PlayerMisc_default_instance_;
+class PlayerDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Player> _instance;
+} _Player_default_instance_;
 }  // namespace Proto
+static void InitDefaultsscc_info_LastWorld_db_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_LastWorld_default_instance_;
+    new (ptr) ::Proto::LastWorld();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::LastWorld::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LastWorld_db_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LastWorld_db_2eproto}, {
+      &scc_info_Vector3_db_2eproto.base,}};
+
+static void InitDefaultsscc_info_Player_db_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_Player_default_instance_;
+    new (ptr) ::Proto::Player();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::Player::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Player_db_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Player_db_2eproto}, {
+      &scc_info_PlayerBase_db_2eproto.base,
+      &scc_info_PlayerMisc_db_2eproto.base,}};
+
+static void InitDefaultsscc_info_PlayerBase_db_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_PlayerBase_default_instance_;
+    new (ptr) ::Proto::PlayerBase();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::PlayerBase::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerBase_db_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PlayerBase_db_2eproto}, {}};
+
+static void InitDefaultsscc_info_PlayerMisc_db_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_PlayerMisc_default_instance_;
+    new (ptr) ::Proto::PlayerMisc();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::PlayerMisc::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PlayerMisc_db_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PlayerMisc_db_2eproto}, {
+      &scc_info_LastWorld_db_2eproto.base,}};
+
+static void InitDefaultsscc_info_Vector3_db_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Proto::_Vector3_default_instance_;
+    new (ptr) ::Proto::Vector3();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Proto::Vector3::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector3_db_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Vector3_db_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_db_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_db_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_db_2eproto = nullptr;
@@ -165,19 +190,25 @@ const char descriptor_table_protodef_db_2eproto[] PROTOBUF_SECTION_VARIABLE(prot
   "\001(\0132\021.Proto.PlayerMisc*(\n\006Gender\022\010\n\004none"
   "\020\000\022\010\n\004male\020\001\022\n\n\006female\020\002b\006proto3"
   ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_db_2eproto_deps[1] = {
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_db_2eproto_sccs[5] = {
+  &scc_info_LastWorld_db_2eproto.base,
+  &scc_info_Player_db_2eproto.base,
+  &scc_info_PlayerBase_db_2eproto.base,
+  &scc_info_PlayerMisc_db_2eproto.base,
+  &scc_info_Vector3_db_2eproto.base,
+};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_db_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_db_2eproto = {
-  false, false, 472, descriptor_table_protodef_db_2eproto, "db.proto", 
-  &descriptor_table_db_2eproto_once, nullptr, 0, 5,
+  false, false, descriptor_table_protodef_db_2eproto, "db.proto", 472,
+  &descriptor_table_db_2eproto_once, descriptor_table_db_2eproto_sccs, descriptor_table_db_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_db_2eproto::offsets,
-  file_level_metadata_db_2eproto, file_level_enum_descriptors_db_2eproto, file_level_service_descriptors_db_2eproto,
+  file_level_metadata_db_2eproto, 5, file_level_enum_descriptors_db_2eproto, file_level_service_descriptors_db_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_db_2eproto_getter() {
-  return &descriptor_table_db_2eproto;
-}
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_db_2eproto(&descriptor_table_db_2eproto);
+static bool dynamic_init_dummy_db_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_db_2eproto)), true);
 namespace Proto {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Gender_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_db_2eproto);
@@ -197,17 +228,16 @@ bool Gender_IsValid(int value) {
 
 // ===================================================================
 
+void Vector3::InitAsDefaultInstance() {
+}
 class Vector3::_Internal {
  public:
 };
 
-Vector3::Vector3(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+Vector3::Vector3(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Proto.Vector3)
 }
 Vector3::Vector3(const Vector3& from)
@@ -219,22 +249,20 @@ Vector3::Vector3(const Vector3& from)
   // @@protoc_insertion_point(copy_constructor:Proto.Vector3)
 }
 
-inline void Vector3::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&z_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(z_));
+void Vector3::SharedCtor() {
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&z_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(z_));
 }
 
 Vector3::~Vector3() {
   // @@protoc_insertion_point(destructor:Proto.Vector3)
-  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Vector3::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void Vector3::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void Vector3::ArenaDtor(void* object) {
@@ -246,6 +274,11 @@ void Vector3::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void Vector3::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Vector3& Vector3::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Vector3_db_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Vector3::Clear() {
 // @@protoc_insertion_point(message_clear_start:Proto.Vector3)
@@ -261,9 +294,11 @@ void Vector3::Clear() {
 
 const char* Vector3::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // float x = 1;
       case 1:
@@ -288,8 +323,7 @@ const char* Vector3::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
         continue;
       default: {
       handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
@@ -316,19 +350,19 @@ failure:
   (void) cached_has_bits;
 
   // float x = 1;
-  if (!(this->_internal_x() <= 0 && this->_internal_x() >= 0)) {
+  if (!(this->x() <= 0 && this->x() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // float y = 2;
-  if (!(this->_internal_y() <= 0 && this->_internal_y() >= 0)) {
+  if (!(this->y() <= 0 && this->y() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   // float z = 3;
-  if (!(this->_internal_z() <= 0 && this->_internal_z() >= 0)) {
+  if (!(this->z() <= 0 && this->z() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_z(), target);
   }
@@ -350,17 +384,17 @@ size_t Vector3::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // float x = 1;
-  if (!(this->_internal_x() <= 0 && this->_internal_x() >= 0)) {
+  if (!(this->x() <= 0 && this->x() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float y = 2;
-  if (!(this->_internal_y() <= 0 && this->_internal_y() >= 0)) {
+  if (!(this->y() <= 0 && this->y() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float z = 3;
-  if (!(this->_internal_z() <= 0 && this->_internal_z() >= 0)) {
+  if (!(this->z() <= 0 && this->z() >= 0)) {
     total_size += 1 + 4;
   }
 
@@ -373,35 +407,44 @@ size_t Vector3::ByteSizeLong() const {
   return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Vector3::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
-    Vector3::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Vector3::GetClassData() const { return &_class_data_; }
-
-void Vector3::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Vector3 *>(to)->MergeFrom(
-      static_cast<const Vector3 &>(from));
+void Vector3::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.Vector3)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Vector3* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Vector3>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.Vector3)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.Vector3)
+    MergeFrom(*source);
+  }
 }
-
 
 void Vector3::MergeFrom(const Vector3& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Proto.Vector3)
   GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from._internal_x() <= 0 && from._internal_x() >= 0)) {
+  if (!(from.x() <= 0 && from.x() >= 0)) {
     _internal_set_x(from._internal_x());
   }
-  if (!(from._internal_y() <= 0 && from._internal_y() >= 0)) {
+  if (!(from.y() <= 0 && from.y() >= 0)) {
     _internal_set_y(from._internal_y());
   }
-  if (!(from._internal_z() <= 0 && from._internal_z() >= 0)) {
+  if (!(from.z() <= 0 && from.z() >= 0)) {
     _internal_set_z(from._internal_z());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Vector3::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.Vector3)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Vector3::CopyFrom(const Vector3& from) {
@@ -417,7 +460,7 @@ bool Vector3::IsInitialized() const {
 
 void Vector3::InternalSwap(Vector3* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Vector3, z_)
       + sizeof(Vector3::z_)
@@ -427,24 +470,22 @@ void Vector3::InternalSwap(Vector3* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Vector3::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
-      &descriptor_table_db_2eproto_getter, &descriptor_table_db_2eproto_once,
-      file_level_metadata_db_2eproto[0]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PlayerBase::InitAsDefaultInstance() {
+}
 class PlayerBase::_Internal {
  public:
 };
 
-PlayerBase::PlayerBase(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+PlayerBase::PlayerBase(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Proto.PlayerBase)
 }
 PlayerBase::PlayerBase(const PlayerBase& from)
@@ -456,22 +497,20 @@ PlayerBase::PlayerBase(const PlayerBase& from)
   // @@protoc_insertion_point(copy_constructor:Proto.PlayerBase)
 }
 
-inline void PlayerBase::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&gender_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&level_) -
-    reinterpret_cast<char*>(&gender_)) + sizeof(level_));
+void PlayerBase::SharedCtor() {
+  ::memset(&gender_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&level_) -
+      reinterpret_cast<char*>(&gender_)) + sizeof(level_));
 }
 
 PlayerBase::~PlayerBase() {
   // @@protoc_insertion_point(destructor:Proto.PlayerBase)
-  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PlayerBase::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void PlayerBase::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void PlayerBase::ArenaDtor(void* object) {
@@ -483,6 +522,11 @@ void PlayerBase::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void PlayerBase::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const PlayerBase& PlayerBase::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PlayerBase_db_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PlayerBase::Clear() {
 // @@protoc_insertion_point(message_clear_start:Proto.PlayerBase)
@@ -498,9 +542,11 @@ void PlayerBase::Clear() {
 
 const char* PlayerBase::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .Proto.Gender gender = 1;
       case 1:
@@ -519,8 +565,7 @@ const char* PlayerBase::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
         continue;
       default: {
       handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
@@ -547,14 +592,14 @@ failure:
   (void) cached_has_bits;
 
   // .Proto.Gender gender = 1;
-  if (this->_internal_gender() != 0) {
+  if (this->gender() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_gender(), target);
   }
 
   // int32 level = 2;
-  if (this->_internal_level() != 0) {
+  if (this->level() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_level(), target);
   }
@@ -576,13 +621,13 @@ size_t PlayerBase::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // .Proto.Gender gender = 1;
-  if (this->_internal_gender() != 0) {
+  if (this->gender() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_gender());
   }
 
   // int32 level = 2;
-  if (this->_internal_level() != 0) {
+  if (this->level() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_level());
@@ -597,32 +642,41 @@ size_t PlayerBase::ByteSizeLong() const {
   return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PlayerBase::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
-    PlayerBase::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PlayerBase::GetClassData() const { return &_class_data_; }
-
-void PlayerBase::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<PlayerBase *>(to)->MergeFrom(
-      static_cast<const PlayerBase &>(from));
+void PlayerBase::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.PlayerBase)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PlayerBase* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PlayerBase>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.PlayerBase)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.PlayerBase)
+    MergeFrom(*source);
+  }
 }
-
 
 void PlayerBase::MergeFrom(const PlayerBase& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Proto.PlayerBase)
   GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_gender() != 0) {
+  if (from.gender() != 0) {
     _internal_set_gender(from._internal_gender());
   }
-  if (from._internal_level() != 0) {
+  if (from.level() != 0) {
     _internal_set_level(from._internal_level());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PlayerBase::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.PlayerBase)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PlayerBase::CopyFrom(const PlayerBase& from) {
@@ -638,7 +692,7 @@ bool PlayerBase::IsInitialized() const {
 
 void PlayerBase::InternalSwap(PlayerBase* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PlayerBase, level_)
       + sizeof(PlayerBase::level_)
@@ -648,13 +702,16 @@ void PlayerBase::InternalSwap(PlayerBase* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PlayerBase::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
-      &descriptor_table_db_2eproto_getter, &descriptor_table_db_2eproto_once,
-      file_level_metadata_db_2eproto[1]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void LastWorld::InitAsDefaultInstance() {
+  ::Proto::_LastWorld_default_instance_._instance.get_mutable()->position_ = const_cast< ::Proto::Vector3*>(
+      ::Proto::Vector3::internal_default_instance());
+}
 class LastWorld::_Internal {
  public:
   static const ::Proto::Vector3& position(const LastWorld* msg);
@@ -664,13 +721,10 @@ const ::Proto::Vector3&
 LastWorld::_Internal::position(const LastWorld* msg) {
   return *msg->position_;
 }
-LastWorld::LastWorld(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+LastWorld::LastWorld(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Proto.LastWorld)
 }
 LastWorld::LastWorld(const LastWorld& from)
@@ -687,22 +741,21 @@ LastWorld::LastWorld(const LastWorld& from)
   // @@protoc_insertion_point(copy_constructor:Proto.LastWorld)
 }
 
-inline void LastWorld::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&position_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&world_id_) -
-    reinterpret_cast<char*>(&position_)) + sizeof(world_id_));
+void LastWorld::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LastWorld_db_2eproto.base);
+  ::memset(&position_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&world_id_) -
+      reinterpret_cast<char*>(&position_)) + sizeof(world_id_));
 }
 
 LastWorld::~LastWorld() {
   // @@protoc_insertion_point(destructor:Proto.LastWorld)
-  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void LastWorld::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void LastWorld::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete position_;
 }
 
@@ -715,6 +768,11 @@ void LastWorld::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void LastWorld::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const LastWorld& LastWorld::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LastWorld_db_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LastWorld::Clear() {
 // @@protoc_insertion_point(message_clear_start:Proto.LastWorld)
@@ -722,7 +780,7 @@ void LastWorld::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && position_ != nullptr) {
+  if (GetArena() == nullptr && position_ != nullptr) {
     delete position_;
   }
   position_ = nullptr;
@@ -734,9 +792,11 @@ void LastWorld::Clear() {
 
 const char* LastWorld::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // int32 world_id = 1;
       case 1:
@@ -761,8 +821,7 @@ const char* LastWorld::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
         continue;
       default: {
       handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
@@ -789,19 +848,19 @@ failure:
   (void) cached_has_bits;
 
   // int32 world_id = 1;
-  if (this->_internal_world_id() != 0) {
+  if (this->world_id() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_world_id(), target);
   }
 
   // int64 world_sn = 2;
-  if (this->_internal_world_sn() != 0) {
+  if (this->world_sn() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_world_sn(), target);
   }
 
   // .Proto.Vector3 position = 3;
-  if (this->_internal_has_position()) {
+  if (this->has_position()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -825,21 +884,21 @@ size_t LastWorld::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // .Proto.Vector3 position = 3;
-  if (this->_internal_has_position()) {
+  if (this->has_position()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *position_);
   }
 
   // int64 world_sn = 2;
-  if (this->_internal_world_sn() != 0) {
+  if (this->world_sn() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_world_sn());
   }
 
   // int32 world_id = 1;
-  if (this->_internal_world_id() != 0) {
+  if (this->world_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_world_id());
@@ -854,35 +913,44 @@ size_t LastWorld::ByteSizeLong() const {
   return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LastWorld::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
-    LastWorld::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LastWorld::GetClassData() const { return &_class_data_; }
-
-void LastWorld::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<LastWorld *>(to)->MergeFrom(
-      static_cast<const LastWorld &>(from));
+void LastWorld::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.LastWorld)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LastWorld* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LastWorld>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.LastWorld)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.LastWorld)
+    MergeFrom(*source);
+  }
 }
-
 
 void LastWorld::MergeFrom(const LastWorld& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Proto.LastWorld)
   GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_position()) {
+  if (from.has_position()) {
     _internal_mutable_position()->::Proto::Vector3::MergeFrom(from._internal_position());
   }
-  if (from._internal_world_sn() != 0) {
+  if (from.world_sn() != 0) {
     _internal_set_world_sn(from._internal_world_sn());
   }
-  if (from._internal_world_id() != 0) {
+  if (from.world_id() != 0) {
     _internal_set_world_id(from._internal_world_id());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LastWorld::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.LastWorld)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void LastWorld::CopyFrom(const LastWorld& from) {
@@ -898,7 +966,7 @@ bool LastWorld::IsInitialized() const {
 
 void LastWorld::InternalSwap(LastWorld* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(LastWorld, world_id_)
       + sizeof(LastWorld::world_id_)
@@ -908,13 +976,18 @@ void LastWorld::InternalSwap(LastWorld* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LastWorld::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
-      &descriptor_table_db_2eproto_getter, &descriptor_table_db_2eproto_once,
-      file_level_metadata_db_2eproto[2]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void PlayerMisc::InitAsDefaultInstance() {
+  ::Proto::_PlayerMisc_default_instance_._instance.get_mutable()->last_world_ = const_cast< ::Proto::LastWorld*>(
+      ::Proto::LastWorld::internal_default_instance());
+  ::Proto::_PlayerMisc_default_instance_._instance.get_mutable()->last_dungeon_ = const_cast< ::Proto::LastWorld*>(
+      ::Proto::LastWorld::internal_default_instance());
+}
 class PlayerMisc::_Internal {
  public:
   static const ::Proto::LastWorld& last_world(const PlayerMisc* msg);
@@ -929,13 +1002,10 @@ const ::Proto::LastWorld&
 PlayerMisc::_Internal::last_dungeon(const PlayerMisc* msg) {
   return *msg->last_dungeon_;
 }
-PlayerMisc::PlayerMisc(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+PlayerMisc::PlayerMisc(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Proto.PlayerMisc)
 }
 PlayerMisc::PlayerMisc(const PlayerMisc& from)
@@ -955,22 +1025,21 @@ PlayerMisc::PlayerMisc(const PlayerMisc& from)
   // @@protoc_insertion_point(copy_constructor:Proto.PlayerMisc)
 }
 
-inline void PlayerMisc::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&last_world_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&online_version_) -
-    reinterpret_cast<char*>(&last_world_)) + sizeof(online_version_));
+void PlayerMisc::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PlayerMisc_db_2eproto.base);
+  ::memset(&last_world_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&online_version_) -
+      reinterpret_cast<char*>(&last_world_)) + sizeof(online_version_));
 }
 
 PlayerMisc::~PlayerMisc() {
   // @@protoc_insertion_point(destructor:Proto.PlayerMisc)
-  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void PlayerMisc::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void PlayerMisc::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete last_world_;
   if (this != internal_default_instance()) delete last_dungeon_;
 }
@@ -984,6 +1053,11 @@ void PlayerMisc::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void PlayerMisc::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const PlayerMisc& PlayerMisc::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PlayerMisc_db_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PlayerMisc::Clear() {
 // @@protoc_insertion_point(message_clear_start:Proto.PlayerMisc)
@@ -991,11 +1065,11 @@ void PlayerMisc::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && last_world_ != nullptr) {
+  if (GetArena() == nullptr && last_world_ != nullptr) {
     delete last_world_;
   }
   last_world_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && last_dungeon_ != nullptr) {
+  if (GetArena() == nullptr && last_dungeon_ != nullptr) {
     delete last_dungeon_;
   }
   last_dungeon_ = nullptr;
@@ -1005,9 +1079,11 @@ void PlayerMisc::Clear() {
 
 const char* PlayerMisc::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // .Proto.LastWorld last_world = 1;
       case 1:
@@ -1032,8 +1108,7 @@ const char* PlayerMisc::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
         continue;
       default: {
       handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
@@ -1060,7 +1135,7 @@ failure:
   (void) cached_has_bits;
 
   // .Proto.LastWorld last_world = 1;
-  if (this->_internal_has_last_world()) {
+  if (this->has_last_world()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1068,7 +1143,7 @@ failure:
   }
 
   // .Proto.LastWorld last_dungeon = 2;
-  if (this->_internal_has_last_dungeon()) {
+  if (this->has_last_dungeon()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1076,7 +1151,7 @@ failure:
   }
 
   // int32 online_version = 3;
-  if (this->_internal_online_version() != 0) {
+  if (this->online_version() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_online_version(), target);
   }
@@ -1098,21 +1173,21 @@ size_t PlayerMisc::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // .Proto.LastWorld last_world = 1;
-  if (this->_internal_has_last_world()) {
+  if (this->has_last_world()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *last_world_);
   }
 
   // .Proto.LastWorld last_dungeon = 2;
-  if (this->_internal_has_last_dungeon()) {
+  if (this->has_last_dungeon()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *last_dungeon_);
   }
 
   // int32 online_version = 3;
-  if (this->_internal_online_version() != 0) {
+  if (this->online_version() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_online_version());
@@ -1127,35 +1202,44 @@ size_t PlayerMisc::ByteSizeLong() const {
   return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PlayerMisc::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
-    PlayerMisc::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PlayerMisc::GetClassData() const { return &_class_data_; }
-
-void PlayerMisc::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<PlayerMisc *>(to)->MergeFrom(
-      static_cast<const PlayerMisc &>(from));
+void PlayerMisc::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.PlayerMisc)
+  GOOGLE_DCHECK_NE(&from, this);
+  const PlayerMisc* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<PlayerMisc>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.PlayerMisc)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.PlayerMisc)
+    MergeFrom(*source);
+  }
 }
-
 
 void PlayerMisc::MergeFrom(const PlayerMisc& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Proto.PlayerMisc)
   GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_last_world()) {
+  if (from.has_last_world()) {
     _internal_mutable_last_world()->::Proto::LastWorld::MergeFrom(from._internal_last_world());
   }
-  if (from._internal_has_last_dungeon()) {
+  if (from.has_last_dungeon()) {
     _internal_mutable_last_dungeon()->::Proto::LastWorld::MergeFrom(from._internal_last_dungeon());
   }
-  if (from._internal_online_version() != 0) {
+  if (from.online_version() != 0) {
     _internal_set_online_version(from._internal_online_version());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void PlayerMisc::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.PlayerMisc)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void PlayerMisc::CopyFrom(const PlayerMisc& from) {
@@ -1171,7 +1255,7 @@ bool PlayerMisc::IsInitialized() const {
 
 void PlayerMisc::InternalSwap(PlayerMisc* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PlayerMisc, online_version_)
       + sizeof(PlayerMisc::online_version_)
@@ -1181,13 +1265,18 @@ void PlayerMisc::InternalSwap(PlayerMisc* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PlayerMisc::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
-      &descriptor_table_db_2eproto_getter, &descriptor_table_db_2eproto_once,
-      file_level_metadata_db_2eproto[3]);
+  return GetMetadataStatic();
 }
+
 
 // ===================================================================
 
+void Player::InitAsDefaultInstance() {
+  ::Proto::_Player_default_instance_._instance.get_mutable()->base_ = const_cast< ::Proto::PlayerBase*>(
+      ::Proto::PlayerBase::internal_default_instance());
+  ::Proto::_Player_default_instance_._instance.get_mutable()->misc_ = const_cast< ::Proto::PlayerMisc*>(
+      ::Proto::PlayerMisc::internal_default_instance());
+}
 class Player::_Internal {
  public:
   static const ::Proto::PlayerBase& base(const Player* msg);
@@ -1202,13 +1291,10 @@ const ::Proto::PlayerMisc&
 Player::_Internal::misc(const Player* msg) {
   return *msg->misc_;
 }
-Player::Player(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+Player::Player(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Proto.Player)
 }
 Player::Player(const Player& from)
@@ -1216,8 +1302,8 @@ Player::Player(const Player& from)
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_name().empty()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArenaForAllocation());
+    name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+      GetArena());
   }
   if (from._internal_has_base()) {
     base_ = new ::Proto::PlayerBase(*from.base_);
@@ -1233,23 +1319,22 @@ Player::Player(const Player& from)
   // @@protoc_insertion_point(copy_constructor:Proto.Player)
 }
 
-inline void Player::SharedCtor() {
-name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&base_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&sn_) -
-    reinterpret_cast<char*>(&base_)) + sizeof(sn_));
+void Player::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Player_db_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&base_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&sn_) -
+      reinterpret_cast<char*>(&base_)) + sizeof(sn_));
 }
 
 Player::~Player() {
   // @@protoc_insertion_point(destructor:Proto.Player)
-  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-inline void Player::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+void Player::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete base_;
   if (this != internal_default_instance()) delete misc_;
@@ -1264,6 +1349,11 @@ void Player::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void Player::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Player& Player::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Player_db_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Player::Clear() {
 // @@protoc_insertion_point(message_clear_start:Proto.Player)
@@ -1271,24 +1361,26 @@ void Player::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  name_.ClearToEmpty();
-  if (GetArenaForAllocation() == nullptr && base_ != nullptr) {
+  name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && base_ != nullptr) {
     delete base_;
   }
   base_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && misc_ != nullptr) {
+  if (GetArena() == nullptr && misc_ != nullptr) {
     delete misc_;
   }
   misc_ = nullptr;
-  sn_ = uint64_t{0u};
+  sn_ = PROTOBUF_ULONGLONG(0);
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 const char* Player::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
     switch (tag >> 3) {
       // uint64 sn = 1;
       case 1:
@@ -1322,8 +1414,7 @@ const char* Player::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
         continue;
       default: {
       handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
@@ -1350,13 +1441,13 @@ failure:
   (void) cached_has_bits;
 
   // uint64 sn = 1;
-  if (this->_internal_sn() != 0) {
+  if (this->sn() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_sn(), target);
   }
 
   // string name = 2;
-  if (!this->_internal_name().empty()) {
+  if (this->name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1366,7 +1457,7 @@ failure:
   }
 
   // .Proto.PlayerBase base = 3;
-  if (this->_internal_has_base()) {
+  if (this->has_base()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1374,7 +1465,7 @@ failure:
   }
 
   // .Proto.PlayerMisc misc = 4;
-  if (this->_internal_has_misc()) {
+  if (this->has_misc()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1398,28 +1489,28 @@ size_t Player::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // string name = 2;
-  if (!this->_internal_name().empty()) {
+  if (this->name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
 
   // .Proto.PlayerBase base = 3;
-  if (this->_internal_has_base()) {
+  if (this->has_base()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *base_);
   }
 
   // .Proto.PlayerMisc misc = 4;
-  if (this->_internal_has_misc()) {
+  if (this->has_misc()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *misc_);
   }
 
   // uint64 sn = 1;
-  if (this->_internal_sn() != 0) {
+  if (this->sn() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
         this->_internal_sn());
@@ -1434,38 +1525,47 @@ size_t Player::ByteSizeLong() const {
   return total_size;
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Player::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
-    Player::MergeImpl
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Player::GetClassData() const { return &_class_data_; }
-
-void Player::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Player *>(to)->MergeFrom(
-      static_cast<const Player &>(from));
+void Player::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Proto.Player)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Player* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Player>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Proto.Player)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Proto.Player)
+    MergeFrom(*source);
+  }
 }
-
 
 void Player::MergeFrom(const Player& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Proto.Player)
   GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_name().empty()) {
+  if (from.name().size() > 0) {
     _internal_set_name(from._internal_name());
   }
-  if (from._internal_has_base()) {
+  if (from.has_base()) {
     _internal_mutable_base()->::Proto::PlayerBase::MergeFrom(from._internal_base());
   }
-  if (from._internal_has_misc()) {
+  if (from.has_misc()) {
     _internal_mutable_misc()->::Proto::PlayerMisc::MergeFrom(from._internal_misc());
   }
-  if (from._internal_sn() != 0) {
+  if (from.sn() != 0) {
     _internal_set_sn(from._internal_sn());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Player::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Proto.Player)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
 }
 
 void Player::CopyFrom(const Player& from) {
@@ -1481,12 +1581,8 @@ bool Player::IsInitialized() const {
 
 void Player::InternalSwap(Player* other) {
   using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &name_, GetArenaForAllocation(),
-      &other->name_, other->GetArenaForAllocation()
-  );
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Player, sn_)
       + sizeof(Player::sn_)
@@ -1496,10 +1592,9 @@ void Player::InternalSwap(Player* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Player::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
-      &descriptor_table_db_2eproto_getter, &descriptor_table_db_2eproto_once,
-      file_level_metadata_db_2eproto[4]);
+  return GetMetadataStatic();
 }
+
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Proto
