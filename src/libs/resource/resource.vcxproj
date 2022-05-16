@@ -86,6 +86,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <RemoteOutRelDir>../../libs</RemoteOutRelDir>
     <OutDir>$(SolutionDir)libs\</OutDir>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="resource_base.cpp" />

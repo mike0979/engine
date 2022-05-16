@@ -120,6 +120,7 @@
     <MultiProcNumber>4</MultiProcNumber>
     <RemoteOutRelDir>../../bin</RemoteOutRelDir>
     <OutDir>$(SolutionDir)bin\</OutDir>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

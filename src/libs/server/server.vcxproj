@@ -90,6 +90,7 @@
     <OutDir>$(SolutionDir)libs\</OutDir>
     <RemoteOutRelDir>../../libs</RemoteOutRelDir>
     <MultiProcNumber>4</MultiProcNumber>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="base_buffer.cpp" />

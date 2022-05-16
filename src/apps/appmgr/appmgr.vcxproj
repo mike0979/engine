@@ -87,6 +87,7 @@
     <RemoteOutRelDir>../../bin</RemoteOutRelDir>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <MultiProcNumber>4</MultiProcNumber>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClInclude Include="appmgr.h" />
@@ -110,7 +111,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libs;/usr/include/jsoncpp</AdditionalIncludeDirectories>
       <CppLanguageStandard>c++14</CppLanguageStandard>
       <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
       <OmitFramePointers>false</OmitFramePointers>
@@ -121,7 +122,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libs;/usr/include/jsoncpp</AdditionalIncludeDirectories>
       <CppLanguageStandard>c++14</CppLanguageStandard>
       <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
     </ClCompile>

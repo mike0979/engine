@@ -89,6 +89,7 @@
     <MultiProcNumber>4</MultiProcNumber>
     <RemoteOutRelDir>../../libs</RemoteOutRelDir>
     <OutDir>$(SolutionDir)libs\</OutDir>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="player.cpp" />

@@ -87,6 +87,7 @@
     <OutDir>$(SolutionDir)bin\</OutDir>
     <RemoteOutRelDir>../../bin</RemoteOutRelDir>
     <MultiProcNumber>4</MultiProcNumber>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClInclude Include="dbmgr.h" />

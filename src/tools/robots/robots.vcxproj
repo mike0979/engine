@@ -87,6 +87,7 @@
     <MultiProcNumber>4</MultiProcNumber>
     <RemoteOutRelDir>../../bin</RemoteOutRelDir>
     <OutDir>$(SolutionDir)bin\</OutDir>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="global_robots.cpp" />
@@ -136,7 +137,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libs;/usr/include/jsoncpp</AdditionalIncludeDirectories>
       <CppLanguageStandard>c++14</CppLanguageStandard>
       <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
       <AdditionalOptions>
@@ -149,7 +150,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../libs</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libs;/usr/include/jsoncpp</AdditionalIncludeDirectories>
       <CppLanguageStandard>c++14</CppLanguageStandard>
       <PreprocessorDefinitions>EPOLL</PreprocessorDefinitions>
       <DebugInformationFormat>None</DebugInformationFormat>

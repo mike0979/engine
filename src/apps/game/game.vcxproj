@@ -87,6 +87,7 @@
     <MultiProcNumber>4</MultiProcNumber>
     <RemoteOutRelDir>../../bin</RemoteOutRelDir>
     <OutDir>$(SolutionDir)bin\</OutDir>
+    <EnableIncrementalBuild>WithNinja</EnableIncrementalBuild>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="console_cmd_world_proxy.cpp" />
